@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main"
+    android:layout_height="fill_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:stretchColumns="*"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        tools:context="com.example.animesh.hospitalms.UpdateDocFields">
+
+        <TextView
+            android:text="Update Doctor Details"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_margin="20dp"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/doctor_id"
+                android:textSize="20sp"/>
+            <EditText
+                android:hint="@string/did"
+                android:layout_weight="1"
+                android:id="@+id/txtdid"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="@string/doctor_s_name"
+                android:textSize="20sp"/>
+            <EditText
+                android:hint="Enter Name"
+                android:layout_weight="1"
+                android:id="@+id/txtname"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Phone"
+                android:textSize="20sp"/>
+            <EditText
+                android:hint="Enter Phone"
+                android:layout_weight="1"
+                android:id="@+id/txtphone"
+                android:textSize="20sp"
+                android:inputType="phone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="@string/age"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_weight="1"
+                android:hint="@string/enter_age"
+                android:id="@+id/txtage"
+                android:textSize="20sp"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:text="Marital Status"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/txtmarital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp">
+
+            </EditText></TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Email Address"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_weight="1"
+                android:hint="Enter email"
+                android:id="@+id/txtemail"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Address"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/txtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:hint="Enter address here"
+                android:inputType="textPostalAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Qualification"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/txtqualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint="Degrees Awarded"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Speciality"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/txtspec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint="Enter Specialization"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Available on:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/txtavail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint=""
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:text="Click to Update"
+                android:layout_weight="1"
+                android:id="@+id/btnsubmit"
+                android:background="#0efc0e"
+                android:gravity="center"  />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

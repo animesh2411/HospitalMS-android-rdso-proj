@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main"
+    android:layout_height="fill_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:stretchColumns="*"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        tools:context="com.example.animesh.hospitalms.UpdateRecFields">
+
+        <TextView
+            android:text="Update Receptionist Details"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_margin="20dp"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/receptionist_s_id"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtrid"
+
+                android:textSize="20sp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="@string/recName"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtname"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Phone"
+                android:textSize="20sp"/>
+            <EditText
+                android:hint="Enter Phone"
+                android:layout_weight="1"
+                android:id="@+id/txtphone"
+                android:textSize="20sp"
+                android:inputType="phone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:text="Shift Assigned"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/txtshift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:hint="Morning/Afternoon/\nEvening/Night"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:text="Password"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:hint="Give a password "
+                android:layout_weight="1"
+                android:id="@+id/txtrpass"
+                android:textSize="20sp"
+                android:inputType="textVisiblePassword" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:text="Click to Update"
+                android:layout_weight="1"
+                android:id="@+id/btnsubmit"
+                android:background="#0efc0e"
+                android:gravity="center"  />
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/main"
+    android:layout_height="fill_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:stretchColumns="*"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tb"
+    tools:context="com.example.animesh.hospitalms.AddPatient">
+
+    <TextView
+        android:text="@string/registration_form"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_margin="20dp"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/patient_id"
+            android:textSize="20sp"/>
+        <EditText
+            android:hint="@string/pid"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:id="@+id/txtpid"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="@string/pname"
+            android:textSize="20sp"/>
+        <EditText
+            android:hint="Enter Name"
+            android:layout_weight="1"
+            android:id="@+id/txtname"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Phone"
+            android:textSize="20sp"/>
+        <EditText
+            android:hint="Enter Phone"
+            android:layout_weight="1"
+            android:id="@+id/txtphone"
+            android:textSize="20sp"
+            android:inputType="phone"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Date of Birth"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:id="@+id/dob"
+            android:inputType="text"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Age"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_weight="1"
+            android:hint="Enter Age"
+            android:id="@+id/txtage"
+            android:textSize="20sp"
+            android:inputType="number"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <TextView
+        android:text="Gender"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_weight="1">
+
+    <RadioButton
+        android:id="@+id/rdmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Male" />
+        <RadioButton
+        android:id="@+id/rdfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Female" />
+    </RadioGroup>
+</TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <TextView
+        android:text="Marital Status"
+        android:textSize="20sp"/>
+
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:entries="@array/maritalstatus"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Email Address"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_weight="1"
+            android:hint="Enter email"
+            android:id="@+id/txtemail"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Address"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/txtaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:hint="Enter address here"
+            android:inputType="textPostalAddress" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Adhar No."
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/txtadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="Enter Adhar Number"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:text="Register Under Doctor: "
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/txtregdoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="Doctor Name"
+            android:inputType="text" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:text="Submit"
+            android:layout_weight="1"
+            android:id="@+id/btnsubmit"
+            android:background="#0efc0e"
+            android:gravity="center"  />
+    </TableRow>
+
+</TableLayout>
+    </ScrollView>

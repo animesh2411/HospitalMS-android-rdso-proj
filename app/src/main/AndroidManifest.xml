@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.animesh.hospitalms">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ReceptionistLogin">
+        </activity>
+        <activity android:name=".RTask" />
+        <activity android:name=".AddPatient" />
+        <activity android:name=".ViewPatient" />
+        <activity android:name=".DeletePatient">
+        </activity>
+        <activity android:name=".SplashLaunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminTask" />
+        <activity android:name=".AddDoctor" />
+        <activity android:name=".AddReception" />
+        <activity android:name=".ViewDoctor" />
+        <activity android:name=".ViewDocInfo" />
+        <activity android:name=".ViewReceptionist" />
+        <activity android:name=".ViewRecInfo" />
+        <activity android:name=".ViewPatInfo" />
+        <activity android:name=".DeleteDoctor" />
+        <activity android:name=".DeleteReception" />
+        <activity android:name=".UpdateDoctor">
+        </activity>
+        <activity android:name=".UpdateReception">
+
+        </activity>
+        <activity android:name=".UpdateRecFields"></activity>
+        <activity android:name=".UpdateDocFields"></activity>
+    </application>
+
+</manifest>
